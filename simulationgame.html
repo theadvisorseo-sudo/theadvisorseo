@@ -3,8 +3,30 @@
 <head>
     <title>My Simulation Game</title>
     <style>
-        body { font-family: Arial; text-align: center; margin-top: 50px; }
-        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        body { 
+            font-family: Arial; 
+            text-align: center; 
+            margin-top: 50px; 
+            background-color: #f4f4f4;
+        }
+        button { 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            margin: 10px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .links a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -12,6 +34,15 @@
     <p>Click the button to start playing.</p>
     <button onclick="startGame()">Start Game</button>
     <p id="score">Score: 0</p>
+
+    <h2>My Websites</h2>
+    <div class="links">
+        <a href="https://timeinus.com" target="_blank">timeinus.com</a>
+        <a href="https://watchglobaltrends.com" target="_blank">watchglobaltrends.com</a>
+        <a href="https://dailyonmail.com" target="_blank">dailyonmail.com</a>
+        <a href="https://theadvisorseo.com" target="_blank">theadvisorseo.com</a>
+        <a href="https://uaetimenow.com" target="_blank">uaetimenow.com</a>
+    </div>
 
     <script>
         let score = 0;
