@@ -2,9 +2,24 @@
 <html>
 <head>
     <title>My Simulation Game</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Simulation Game!</h1>
-    <p>This is my first game page hosted on GitHub Pages.</p>
+    <p>Click the button to start playing.</p>
+    <button onclick="startGame()">Start Game</button>
+    <p id="score">Score: 0</p>
+
+    <script>
+        let score = 0;
+        function startGame() {
+            score += Math.floor(Math.random() * 10 + 1);
+            document.getElementById('score').innerText = 'Score: ' + score;
+            alert('Game action performed! Current score: ' + score);
+        }
+    </script>
 </body>
 </html>
